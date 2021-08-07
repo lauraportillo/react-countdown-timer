@@ -34,9 +34,23 @@ const App = (props) => {
     return () => clearInterval(intervalId);
   }, [isActive, counter]);
 
+  const handleReset = () => {
+    setIsActive(false);
+    setCounter(0);
+    setSecond('00');
+    setMinute('00');
+  };
+
   return (
     <>
-      <Timer second={second} minute={minute} isActive={isActive} counter={counter} setIsActive={setIsActive} />
+      <Timer
+        second={second}
+        minute={minute}
+        isActive={isActive}
+        counter={counter}
+        setIsActive={setIsActive}
+        handleReset={handleReset}
+      />
     </>
   );
 };
