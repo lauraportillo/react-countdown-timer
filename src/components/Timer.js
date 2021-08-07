@@ -9,8 +9,8 @@ const Timer = (props) => {
         <span className="counter__sec">{props.second}</span>
       </div>
       <div className="btns">
-        <button onClick={() => null} className="btns__start">
-          Start
+        <button onClick={() => props.setIsActive(!props.isActive)} className="btns__start">
+          {props.isActive ? 'Pause' : 'Start'}
         </button>
         <button onClick={() => null} className="btns__reset">
           Reset
