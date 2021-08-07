@@ -2,17 +2,17 @@ import '../stylesheets/Timer.scss';
 
 const Timer = (props) => {
   return (
-    <div className="container">
-      <div className="time">
-        <span className="minute">00</span>
+    <div>
+      <div className="counter">
+        <span className="counter__min">{props.minute}</span>
         <span>:</span>
-        <span className="second">00</span>
+        <span className="counter__sec">{props.second}</span>
       </div>
-      <div className="buttons">
-        <button onClick={() => null} className="start">
+      <div className="btns">
+        <button onClick={() => null} className="btns__start">
           Start
         </button>
-        <button onClick={() => null} className="reset">
+        <button onClick={() => null} className="btns__reset">
           Reset
         </button>
       </div>
