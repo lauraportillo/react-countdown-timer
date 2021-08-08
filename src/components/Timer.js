@@ -28,8 +28,14 @@
 // export default Timer;
 
 // COPIA 1
-
 import React from 'react';
+// Styles
+import '../stylesheets/Timer.scss';
+
+// const Timer = (props) => {
+//   const handleReset = () => {
+//     props.handleReset();
+//   };
 
 const Timer = ({ hoursMinSecs }) => {
   const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;

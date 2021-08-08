@@ -57,18 +57,44 @@
 
 // export default App;
 
-// COPIA 1
+// TRABAJANDO EN ESTE CÓDIGO Y MEJORANDOLO
+
+// React
+import React, { useState, useEffect } from 'react';
+// Components
 import Timer from './Timer';
+// Styles
 import '../stylesheets/App.scss';
 
-function App() {
-  const hoursMinSecs = { hours: 1, minutes: 20, seconds: 40 };
+const App = () => {
+  //state
+  const [hour, setHour] = useState('1');
+  const [minute, setMinute] = useState('20');
+  const [second, setSecond] = useState('40');
+  const [isActive, setIsActive] = useState(false);
+  const [counter, setCounter] = useState(0);
 
+  const hoursMinSecs = { hours: 1, minutes: 20, seconds: 40 };
+  // const handleReset = () => {
+  //   setIsActive(false);
+  //   setCounter(0);
+  //   setMinute('20');
+  //   setSecond('40');
+  // };
   return (
     <div className="App">
-      <Timer hoursMinSecs={hoursMinSecs} />
+      <Timer
+        hour={hour}
+        second={second}
+        minute={minute}
+        isActive={isActive}
+        counter={counter}
+        setIsActive={setIsActive}
+        // handleReset={handleReset}
+        hoursMinSecs={hoursMinSecs}
+      />
     </div>
   );
-}
+};
 
 export default App;
