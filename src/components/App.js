@@ -5,10 +5,10 @@ import Timer from './Timer';
 // Styles
 import '../stylesheets/App.scss';
 
-const App = (props) => {
+const App = () => {
   //state
+  const [minute, setMinute] = useState('60');
   const [second, setSecond] = useState('00');
-  const [minute, setMinute] = useState('00');
   const [isActive, setIsActive] = useState(false);
   const [counter, setCounter] = useState(0);
 
@@ -56,3 +56,19 @@ const App = (props) => {
 };
 
 export default App;
+
+// import './App.css';
+// import CountDownTimer from './CountDownTimer';
+
+// function App() {
+
+//   const hoursMinSecs = {hours:1, minutes: 20, seconds: 40}
+
+//   return (
+//     <div className="App">
+//         <CountDownTimer hoursMinSecs={hoursMinSecs}/>
+//     </div>
+//   );
+// }
+
+// export default App;
