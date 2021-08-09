@@ -8,9 +8,14 @@ import Timer from './Timer';
 import '../stylesheets/App.scss';
 
 const App = () => {
-  const hoursMinSecs = { hours: 1, minutes: 20, seconds: 40 };
-  const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
-  const [[hrs, mins, secs], setTime] = React.useState([hours, minutes, seconds]);
+  // const hoursMinSecs = { hours: 1, minutes: 20, seconds: 40 };
+  // const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
+
+  //state
+  const [hours] = useState('1');
+  const [minutes] = useState('1');
+  const [seconds] = useState('1');
+  const [[hrs, mins, secs], setTime] = useState([hours, minutes, seconds]);
 
   const tick = () => {
     if (hrs === 0 && mins === 0 && secs === 0) reset();
@@ -25,7 +30,7 @@ const App = () => {
 
   const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
-  React.useEffect(() => {
+  useEffect(() => {
     const timerId = setInterval(() => tick(), 1000);
     return () => clearInterval(timerId);
   });
