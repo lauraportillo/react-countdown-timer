@@ -1,5 +1,3 @@
-// TRABAJANDO EN ESTE CÓDIGO Y MEJORANDOLO
-
 // Styles
 import '../stylesheets/Timer.scss';
 import React from 'react';
@@ -15,14 +13,6 @@ const Timer = (props) => {
           <span>:</span>
           <span className="counter__sec">{props.secs.toString().padStart(2, '0')}</span>
         </div>
-        {/* <div className="btns">
-          <button onClick={() => props.setIsActive(!props.isActive)} className="btns__start">
-            {props.isActive ? 'Pause' : 'Start'}
-          </button>
-          <button onClick={handleReset} className="btns__reset">
-            Reset
-          </button>
-        </div> */}
       </div>
     </div>
   );
