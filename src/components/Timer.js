@@ -1,56 +1,21 @@
-// // Styles
-// import '../stylesheets/Timer.scss';
-// import React from 'react';
+// Styles
+import '../stylesheets/Timer.scss';
 
-// const Timer = (props) => {
-//   return (
-//     <div>
-//       <div>
-//         <div className="counter">
-//           <span className="counter__hr"> {props.hrs.toString().padStart(2, '0')} </span>
-//           <span>:</span>
-//           <span className="counter__min">{props.mins.toString().padStart(2, '0')}</span>
-//           <span>:</span>
-//           <span className="counter__sec">{props.secs.toString().padStart(2, '0')}</span>
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Timer;
-
-import React, { useState, useEffect } from 'react';
-
-function Timer() {
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(10);
-
-  useEffect(() => {
-    let interval = setInterval(() => {
-      clearInterval(interval);
-
-      if (seconds === 0) {
-        if (minutes !== 0) {
-          setSeconds(59);
-          setMinutes(minutes - 1);
-        }
-      } else {
-        setSeconds(seconds - 1);
-      }
-    }, 1000);
-  }, [seconds, minutes]);
-
-  const timerMinutes = minutes < 10 ? `0${minutes}` : minutes;
-  const timerSeconds = seconds < 10 ? `0${seconds}` : seconds;
+const Timer = (props) => {
+  const timerMinutes = props.minutes < 10 ? `0${props.minutes}` : props.minutes;
+  const timerSeconds = props.seconds < 10 ? `0${props.seconds}` : props.seconds;
 
   return (
-    <div className="pomodoro">
-      <div className="timer">
+    // 2 different ways to write the same, but one of them with less code
+    <div>
+      <div>
+        {props.minutes.toString().padStart(2, '0')}:{props.seconds.toString().padStart(2, '0')}
+      </div>
+      <div>
         {timerMinutes}:{timerSeconds}
       </div>
     </div>
   );
-}
+};
 
 export default Timer;
