@@ -16,6 +16,7 @@ const App = () => {
   const [minutes] = useState('1');
   const [seconds] = useState('1');
   const [[hrs, mins, secs], setTime] = useState([hours, minutes, seconds]);
+  const [isActive, setIsActive] = useState(false);
 
   const tick = () => {
     if (hrs === 0 && mins === 0 && secs === 0) reset();
