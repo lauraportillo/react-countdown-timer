@@ -1,41 +1,8 @@
-// // Styles
-// import '../stylesheets/Timer.scss';
+// TRABAJANDO EN ESTE CÓDIGO Y MEJORANDOLO
 
-// const Timer = (props) => {
-//   const handleReset = () => {
-//     props.handleReset();
-//   };
-
-//   return (
-//     <div>
-//       <div className="counter">
-//         <span className="counter__min">{props.minute}</span>
-//         <span>:</span>
-//         <span className="counter__sec">{props.second}</span>
-//       </div>
-//       <div className="btns">
-//         <button onClick={() => props.setIsActive(!props.isActive)} className="btns__start">
-//           {props.isActive ? 'Pause' : 'Start'}
-//         </button>
-//         <button onClick={handleReset} className="btns__reset">
-//           Reset
-//         </button>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Timer;
-
-// COPIA 1
-import React from 'react';
 // Styles
 import '../stylesheets/Timer.scss';
-
-// const Timer = (props) => {
-//   const handleReset = () => {
-//     props.handleReset();
-//   };
+import React from 'react';
 
 const Timer = ({ hoursMinSecs }) => {
   const { hours = 0, minutes = 0, seconds = 60 } = hoursMinSecs;
@@ -69,3 +36,32 @@ const Timer = ({ hoursMinSecs }) => {
 };
 
 export default Timer;
+
+// // Styles
+// import '../stylesheets/Timer.scss';
+
+// const Timer = (props) => {
+//   const handleReset = () => {
+//     props.handleReset();
+//   };
+
+//   return (
+//     <div>
+//       <div className="counter">
+//         <span className="counter__min">{props.minute}</span>
+//         <span>:</span>
+//         <span className="counter__sec">{props.second}</span>
+//       </div>
+//       <div className="btns">
+//         <button onClick={() => props.setIsActive(!props.isActive)} className="btns__start">
+//           {props.isActive ? 'Pause' : 'Start'}
+//         </button>
+//         <button onClick={handleReset} className="btns__reset">
+//           Reset
+//         </button>
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Timer;
