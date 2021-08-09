@@ -7,7 +7,7 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   //state
-  const [hours] = useState('1');
+  const [hours] = useState('');
   const [minutes] = useState('1');
   const [seconds] = useState('1');
   const [[hrs, mins, secs], setTime] = useState([hours, minutes, seconds]);
