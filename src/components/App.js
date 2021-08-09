@@ -25,7 +25,6 @@ const App = () => {
 
   const reset = () => setTime([parseInt(hours), parseInt(minutes), parseInt(seconds)]);
 
-  //useEffect
   useEffect(() => {
     const timerId = setInterval(() => countDown(), 1000);
     return () => clearInterval(timerId);
