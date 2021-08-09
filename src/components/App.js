@@ -25,6 +25,7 @@ const App = () => {
       }
     }, 1000);
   }, [seconds, minutes]);
+
   return (
     <div>
       <Timer seconds={seconds} minutes={minutes} />
