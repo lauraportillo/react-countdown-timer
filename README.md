@@ -1,4 +1,4 @@
-# React Countdown timer
+# React Countdown timer (readme in progress)
 
 Hi guys!
 
