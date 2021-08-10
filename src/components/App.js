@@ -7,9 +7,9 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   //state
-  const [hours, setHours] = useState(1);
-  const [minutes, setMinutes] = useState(1);
-  const [seconds, setSeconds] = useState(10);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
+  const [seconds, setSeconds] = useState(3);
 
   //useEffect
   useEffect(() => {
@@ -21,6 +21,13 @@ const App = () => {
           setSeconds(59);
           setMinutes(minutes - 1);
         }
+        if (minutes === 0) {
+          if (hours !== 0) {
+            setSeconds(59);
+            setMinutes(59);
+            setHours(hours - 1);
+          }
+        }
       } else {
         setSeconds(seconds - 1);
       }
@@ -29,7 +36,7 @@ const App = () => {
 
   return (
     <div>
-      <Timer seconds={seconds} minutes={minutes} />
+      <Timer seconds={seconds} minutes={minutes} hours={hours} />
     </div>
   );
 };
