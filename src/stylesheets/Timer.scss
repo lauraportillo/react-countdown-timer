@@ -1,4 +1,11 @@
-.timer {
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container__timer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -7,7 +14,7 @@
   background-color: black;
   border-radius: 30px;
 }
-.timer__num {
+.container__timer--num {
   font-size: 40px;
   color: white;
   font-family: 'Roboto Mono', monospace;

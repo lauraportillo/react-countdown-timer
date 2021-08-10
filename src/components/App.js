@@ -35,7 +35,7 @@ const App = () => {
   }, [seconds, minutes]);
 
   return (
-    <div className="container">
+    <div className="app">
       <Timer seconds={seconds} minutes={minutes} hours={hours} />
     </div>
   );
