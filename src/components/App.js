@@ -7,10 +7,10 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   //state
-  const [hours, setHours] = useState(1);
-  const [minutes, setMinutes] = useState(1);
+  const [hours, setHours] = useState(0);
+  const [minutes, setMinutes] = useState(0);
   const [seconds, setSeconds] = useState(3);
-  const [message] = useState('Stop the game');
+  const [displayMessage, setDisplayMessage] = useState(false);
 
   //useEffect
   useEffect(() => {
@@ -29,15 +29,24 @@ const App = () => {
             setHours(hours - 1);
           }
         }
+        if (hours === 0 && minutes === 0 && seconds === 0) {
+          setDisplayMessage(true);
+        }
       } else {
         setSeconds(seconds - 1);
       }
     }, 1000);
   }, [seconds, minutes]);
 
+  // const handleMessage = () => {
+  //   if (hours === 0 && minutes === 0 && seconds === 0) {
+  //     return message;
+  //   }
+  // };
+
   return (
     <div className="app">
-      <Timer seconds={seconds} minutes={minutes} hours={hours} message={message} />
+      <Timer seconds={seconds} minutes={minutes} hours={hours} displayMessage={displayMessage} />
     </div>
   );
 };
