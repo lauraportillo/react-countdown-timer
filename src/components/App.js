@@ -10,6 +10,7 @@ const App = () => {
   const [hours, setHours] = useState(1);
   const [minutes, setMinutes] = useState(1);
   const [seconds, setSeconds] = useState(3);
+  const [message] = useState('Stop the game');
 
   //useEffect
   useEffect(() => {
@@ -36,7 +37,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <Timer seconds={seconds} minutes={minutes} hours={hours} />
+      <Timer seconds={seconds} minutes={minutes} hours={hours} message={message} />
     </div>
   );
 };

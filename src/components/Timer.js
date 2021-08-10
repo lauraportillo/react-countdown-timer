@@ -12,6 +12,7 @@ const Timer = (props) => {
           {props.seconds.toString().padStart(2, '0')}
         </div>
       </div>
+      <h3>{props.message}</h3>
     </div>
   );
 };
