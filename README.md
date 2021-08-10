@@ -1,12 +1,13 @@
 # React Countdown timer
 
-<img align="center" src="https://github.com/lauraportillo/react-countdown-timer/blob/master/src/images/readme/gameStart.JPG">
-
 Hi guys!
 
 Here you are a very useful countdown timer made in React.js
 It has been thought like a component that you can use in other projects.
 I am developing a game where I need a countdown timer to stop it, so I decided to develop this part like an independent project.
+
+<img align="center" src="https://github.com/lauraportillo/react-countdown-timer/blob/master/src/images/readme/gameStart.JPG">
+
 👉 Save the time needed in React state:
 
 //state
