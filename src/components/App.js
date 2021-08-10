@@ -8,8 +8,8 @@ import '../stylesheets/App.scss';
 const App = () => {
   //state
   const [hours, setHours] = useState(1);
-  const [minutes, setMinutes] = useState(1);
-  const [seconds, setSeconds] = useState(3);
+  const [minutes, setMinutes] = useState(30);
+  const [seconds, setSeconds] = useState(0);
   const [displayMessage, setDisplayMessage] = useState(false);
 
   //useEffect
