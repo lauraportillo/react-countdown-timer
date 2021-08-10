@@ -7,8 +7,8 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   //state
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
+  const [hours, setHours] = useState(1);
+  const [minutes, setMinutes] = useState(1);
   const [seconds, setSeconds] = useState(3);
   const [displayMessage, setDisplayMessage] = useState(false);
 
@@ -36,13 +36,7 @@ const App = () => {
         setSeconds(seconds - 1);
       }
     }, 1000);
-  }, [seconds, minutes]);
-
-  // const handleMessage = () => {
-  //   if (hours === 0 && minutes === 0 && seconds === 0) {
-  //     return message;
-  //   }
-  // };
+  }, [seconds, minutes, hours]);
 
   return (
     <div className="app">
