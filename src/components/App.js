@@ -7,8 +7,8 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   //state
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
+  const [hours, setHours] = useState(1);
+  const [minutes, setMinutes] = useState(1);
   const [seconds, setSeconds] = useState(3);
 
   //useEffect
@@ -35,7 +35,7 @@ const App = () => {
   }, [seconds, minutes]);
 
   return (
-    <div>
+    <div className="container">
       <Timer seconds={seconds} minutes={minutes} hours={hours} />
     </div>
   );
