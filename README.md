@@ -1,4 +1,4 @@
-# [React Countdown timer](https://lauraportillo.github.io/react-countdown-timer/)
+# React Countdown timer
 
 Hi guys!
 
@@ -9,6 +9,8 @@ It has been thought like a **component** that you can use in other projects.
 I am developing a **game** where I need a countdown timer **to stop it**, so I decided to develop this part like an independent project.
 
 <img align="center" src="https://github.com/lauraportillo/react-countdown-timer/blob/master/src/images/readme/gameStart.JPG">
+
+👉 [Link](https://lauraportillo.github.io/react-countdown-timer/)
 
 ## Scripts to start the project:
 
@@ -41,5 +43,8 @@ const [seconds, setSeconds] = useState(0);
 
 ## Contact
 
-- [GitHub Profile](https://github.com/lauraportillo)
-- [LinkedIn Profile](https://www.linkedin.com/in/laura-portillo-rodr%C3%ADguez/)
+### 🚀🚀🚀🚀🚀
+
+- [LinkedIn](https://www.linkedin.com/in/laura-portillo-rodr%C3%ADguez-21965a86/)
+- [GitHub](https://github.com/lauraportillo)
+- [Twitter](https://twitter.com/LauraPo02860847)
