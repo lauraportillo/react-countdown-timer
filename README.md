@@ -10,7 +10,7 @@ I am developing a **game** where I need a countdown timer **to stop it**, so I d
 
 <img align="center" src="https://github.com/lauraportillo/react-countdown-timer/blob/master/src/images/readme/gameStart.JPG">
 
-👉 [Link](https://lauraportillo.github.io/react-countdown-timer/)
+👉 [Click here to see the countdown timer working](https://lauraportillo.github.io/react-countdown-timer/)
 
 ## Scripts to start the project:
 
@@ -42,8 +42,6 @@ const [seconds, setSeconds] = useState(0);
 ```
 
 ## Contact
-
-### 🚀🚀🚀🚀🚀
 
 - [LinkedIn](https://www.linkedin.com/in/laura-portillo-rodr%C3%ADguez-21965a86/)
 - [GitHub](https://github.com/lauraportillo)
