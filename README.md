@@ -30,20 +30,11 @@ npm install
 npm start
 ```
 
-👉 And save the time needed in React state:
+👉 And save the **time needed** in React state:
 
-```sh
-//state
-const [hours, setHours] = useState(1);
-const [minutes, setMinutes] = useState(30);
-const [seconds, setSeconds] = useState(0);
-```
+`//state const [hours, setHours] = useState(**1**); const [minutes, setMinutes] = useState(**30**); const [seconds, setSeconds] = useState(**0**);`
 
 ## Contact
 
 - [GitHub Profile](https://github.com/lauraportillo)
 - [LinkedIn Profile](https://www.linkedin.com/in/laura-portillo-rodr%C3%ADguez/)
-
-```
-
-```
