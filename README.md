@@ -1,4 +1,4 @@
-# React Countdown timer (readme in progress)
+# [React Countdown timer (readme in progress)] (https://lauraportillo.github.io/react-countdown-timer/)
 
 Hi guys!
 
