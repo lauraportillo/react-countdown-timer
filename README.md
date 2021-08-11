@@ -32,7 +32,12 @@ npm start
 
 👉 And save the **time needed** in React state:
 
-`//state const [hours, setHours] = useState(**1**); const [minutes, setMinutes] = useState(**30**); const [seconds, setSeconds] = useState(**0**);`
+```js
+//state
+const [hours, setHours] = useState(1);
+const [minutes, setMinutes] = useState(30);
+const [seconds, setSeconds] = useState(0);
+```
 
 ## Contact
 
